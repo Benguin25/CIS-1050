@@ -1,333 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+ <html lang="en">
+ <head>
+ 
+   <title>Drone Photography</title>
+ 
+   <link rel="icon" type="image/png" href="icon.jpg">
+ 
+   <meta charset="utf-8" />
+   <style>
+     /* this is where css code will go */
+     body {
+       background-color: black;
+       color: #FF4C4C; 
+       font-family: "Roboto Mono", monospace;
+     }
+ 
+     h1 {
+       font-family: "Courier New", monospace;
+       font-size: 60px;
+       padding-top: 10px;
+       text-align: center;
+       font-weight: bold;
+       font-style: italic;
+     }
+ 
+     h2 {
+       font-family: "Courier New", monospace;
+       font-size: 45px;
+       padding-top: 10px;
+       text-align: center;
+       color: #FFB6C1
+     }
+ 
+     h3 {
+       font-size: 24px;
+       color: #D3D3D3;
+       text-align: left;
+     }
+ 
+     h4 {
+       font-size: 18px;
+       color: #D3D3D3;
+     }
+ 
+     /* Had to comment the following out because we can't use a nevigation bar
+     
+     nav {
+       background-color: #1f1f1f;
+       padding: 20px;
+       text-align: center;
+     }
+ 
+     nav a {
+       color: #FFB6C1;
+       text-decoration: none;
+       margin: 0 15px;
+       font-size: 24px;
+     }
+ 
+     nav a:hover {
+       color: #D3D3D3;
+       background-color: black;
+       padding: 10px 20px;
+       border-radius: 50px;
+       font-size: 30px;
+     }
+ 
+     html {
+       scroll-behavior: smooth;
+     }
+ 
+     */
+ 
+     /* Conudcted my own research to get the code below for the image gallery: */
+     .gallery {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 10px;
+       padding: 20px;
+       max-width: 1200px;
+       margin: 0 auto;
+     }
+ 
+     .gallery img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+       border-radius: 10px;
+       transition: transform 0.3s ease-in-out;
+     }
+ 
+     .gallery img:hover {
+       transform: scale(2.1);
+       z-index: 10;
+     }
+ 
+     nav a:hover {
+       color: #FFB6C1;
+     }
+ 
+   </style>
+ </head>
+ <body>
+ 
+   <!-- Had to comment the following out because we can't use a navigation bar
+   <nav>
+     <a href="#home">Home</a>
+     <a href="#info">Info</a>
+     <a href="#gallery">Gallery</a>
+     <a href="#shop">Shop</a>
+     <a href="#articles">Articles (tips)</a>
+   </nav>
+   -->
+ 
+   <h1>Drone Photography</h1>
+ 
+   <!-- <h2 id="home">Home</h2> -->
+   <h2>Home</h2>
 
-  <title>Drone Photography</title>
-
-  <link rel="icon" type="image/png" href="icon.jpg">
-
-  <meta charset="utf-8" />
-  <style>
-    /* this is where css code will go */
-    body {
-      background-color: #0f0f0f;
-      color: #ff6078; 
-      font-family: "Roboto Mono", monospace;
-      margin: 45px;
-    }
-
-    h1 {
-      font-family: "Courier New", monospace;
-      font-size: 60px;
-      padding-top: 10px;
-      text-align: center;
-      font-weight: bold;
-      font-style: italic;
-    }
-
-    h2 {
-      font-family: "Courier New", monospace;
-      font-size: 45px;
-      padding-top: 10px;
-      text-align: center;
-      color: #FFB6C1
-    }
-
-    h3 {
-      color: #ff6078;
-      font-size: 24px;
-      text-align: left;
-    }
-
-    h4 {
-      color: #ff6078;
-      font-size: 18px;
-    }
-
-    /* Had to comment the following out because we can't use a nevigation bar
-    
-    nav {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #FFB6C1;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 24px;
-    }
-
-    nav a:hover {
-      color: #D3D3D3;
-      background-color: black;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-size: 30px;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    */
-
-    /* Conudcted my own research to get the code below for the image gallery: */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery img:hover {
-      transform: scale(2.1);
-      z-index: 10;
-    }
-
-    nav a:hover {
-      color: #FFB6C1;
-    }
-
-  </style>
-</head>
-<body>
-
-  <!-- Had to comment the following out because we can't use a navigation bar
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#info">Info</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#shop">Shop</a>
-    <a href="#articles">Articles (tips)</a>
-  </nav>
-  -->
-
-  <h1>Drone Photography</h1>
-
-  <figure style="text-align: center; margin-right: 100px; margin-left: auto; display: block;">
-    helllooolo
-    testasdfas
-    <img src="drone.jpg" alt="Photo of a DJI Avata 2 Photography Drone" width="600" height="400">
+   <figure style="float: right; text-align: center; margin-right: 100px; margin-left: 50px;">
+     <img src="drone.jpg" alt="Photo of a DJI Avata 2 Photography Drone" width="550" height="350">
+     <figcaption style="color: red; font-size: 18px; margin-top: 5px;">
+       DJI Avata 2 Photography Drone
+     </figcaption>
+   </figure>  
+ 
+   <h3 style="margin-left: 20px;">Welcome to drone photography! This website will explore the exciting world of aerial photography and videography with drones. This website will offer insight into a number of different topics including but not limited to:</h3>
+   <ul>
+     <h4 style="margin-left: 20px;"><li>Types of drones</li>
+     <li>Tips and tricks</li>
+     <li>Best locations for drone photography</li>
+     <li>Legal considerations</li></h4>
+   </ul>
+ 
+   <h3 style="margin-left: 20px;"><p>Let's start off with the basics. What is a photography drone, and why would you need one?</p></h3>
+   <h4 style="margin-left: 20px;"><p> First off, a photography drone is simply a regular drone equipped with a high quality camera. It is a aerial device that allows you to capture stunning aerial views. These drones are used for a number of different reasons, such as:</p></h4>
+   
+   <figure style="float: right; text-align: center; margin-right: 100px; margin-left: 50px;">
+    <img src="imageAddition.jpg" alt="Photo of Unknown Drone" width="550" height="350">
     <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-      DJI Avata 2 Photography Drone
+       Photo of Unknown Drone
     </figcaption>
   </figure>  
-  
-  <figure style="text-align: center; margin-right: 100px; margin-left: auto; display: block;">
-    <img src="imageAddition.jpg" alt="Photo Of Unknown Drone" width="400" height="400">
-    <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-      Photo Of Unknown Drone
-    </figcaption>
-  </figure>  
-
-  <!-- <h2 id="home">Home</h2> -->
-  <h2>Home</h2>
-
-  <h3 style="margin-left: 20px;">Welcome to drone photography! This website will explore the exciting world of aerial photography and videography with drones. This website will offer insight into a number of different topics including but not limited to:</h3>
-  <ul>
-    <h4 style="margin-left: 20px;"><li>Types of drones</li>
-    <li>Tips and tricks</li>
-    <li>Best locations for drone photography</li>
-    <li>Legal considerations</li></h4>
-  </ul>
-
-  <h3 style="margin-left: 20px;"><p>Let's start off with the basics. What is a photography drone, and why would you need one?</p></h3>
-  <h4 style="margin-left: 20px;"><p> First off, a photography drone is simply a regular drone equipped with a high quality camera. It is a aerial device that allows you to capture stunning aerial views. These drones are used for a number of different reasons, such as:</p></h4>
-  <ul>
-    <h4 style="margin-left: 20px;"><li>Personal Project</li>
-    <li>Real Estate</li>
-    <li>Film Making</li>
-    <li>Agriculture</li>
-    <li>Surveying</li></h4>
-  </ul>
-  <h4><p style="margin-left: 20px;">Feel free to have a read on the basics of drone photography <a href="https://www.techtarget.com/iotagenda/definition/drone-photography">here</a>.</p></h4>
-
-  <!-- <h2 id="info">Info</h2> -->
-  <h2>Info</h2> 
-
-  <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
-    <img src="droneTypes.jpeg" alt="Photo of different drones types" width="650" height="500">
-    <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-      Different Types of Common Drones
-    </figcaption>
-  </figure>  
-
-  <h3 style="margin-left: 20px; margin-right: 200px">When purchasing a drone, there are many things you must keep in mind:</h3>
-different drones
-  <ol>
-    <li style = "margin-right: 130px;"><strong>Weight & Size</strong> - Drones range from compact sub-250g models, like the DJI Mini series all the way to professional rigs exceeding 2kg.</li>
-    <li style = "margin-right: 130px;"><strong>Flight Range</strong> - Consumer drones typically have a range of 5-15 km, depending on signal strength.</li>
-    <li style = "margin-right: 130px;"><strong>Camera Quality</strong> - Entry-level drones have 12MP cameras with 1080p video, while high-end models offer 20MP+ sensors.</li>
-    <li style = "margin-right: 130px;"><strong>Build Quality & Durability</strong> - Premium drones feature high-quality materials like carbon fiber and reinforced plastics for enhanced durability and impact resistance.</li>
-    <li style = "margin-right: 130px;"><strong>Battery Life</strong> - Most drones fly for 20-40 minutes per charge. Weather conditions, payload, and flying style affect battery performance.</li>
-    <li style = "margin-right: 130px;"><strong>Flight Rules & Regulations</strong> - Many countries require registration for drones over 250g. No-fly zones exist near airports and restricted areas, with altitude limits typically set at 120m (400ft).</li>
-    <li style = "margin-right: 130px;"><strong>Cost</strong> Prices vary widely:
-      <ul>
-          <li><strong>Entry-level ($300-$700):</strong> Basic camera, limited range, and no obstacle avoidance.</li>
-          <li><strong>Mid-range ($700-$12525,500):</strong> Better cameras (4K, larger sensors), longer range, and smart flight modes.</li>
-          <li><strong>Professional ($1,500-$5,000+):</strong> High-end cameras (5.1K, 1-inch+ sensors), superior flight range, obstacle avoidance, and advanced filming features.</li>
-      </ul>
-    </li>  
-  </ol>
-
-  <!-- <h2 id="gallery">Gallery</h2> -->
-  <h2>Gallery</h2>
-
-  <div class="gallery">
-    <img src="1.jpg" alt="Drone Image 1">
-    <img src="2.jpg" alt="Drone Image 2">
-    <img src="3.jpg" alt="Drone Image 3">
-    <img src="4.jpg" alt="Drone Image 4">
-    <img src="5.jpg" alt="Drone Image 5">
-    <img src="6.jpg" alt="Drone Image 6">
-    <img src="7.jpg" alt="Drone Image 7">
-    <img src="8.jpg" alt="Drone Image 8">
-    <img src="9.jpg" alt="Drone Image 9">
-    <img src="10.jpg" alt="Drone Image 10">
-    <img src="11.jpg" alt="Drone Image 11">
-    <img src="12.jpg" alt="Drone Image 12">
-    <img src="13.jpg" alt="Drone Image 13">
-    <img src="14.jpg" alt="Drone Image 14">
-    <img src="15.jpg" alt="Drone Image 15">
-    <img src="16.jpg" alt="Drone Image 16">
-  </div>  
-
-  <!-- <h2 id="shop">Shop</h2> -->
-  <h2>Shop</h2> 
-
-  <!-- Did my own research to figure out how to make a table -->
-
-  <div style="display: flex; justify-content: center; align-items: center;">
-      <table style="width: 80%; text-align: center; background-color: #1f1f1f; border-radius: 10px; padding: 20px;">
-        <tr>
-          <td style="padding: 20px; border: 1px solid #FFB6C1;">
-            <img src="dronePurchase1.jpg" alt="NAFYRE N11 PRO GPS Drone" width="250" height="200" style="border-radius: 10px;"><br>
-            <h3 style="color: #FFB6C1; text-align: center;"><a href="https://www.amazon.ca/NAFYRE-Control-Brushless-Quadcopter-Beginners/dp/B0DPX7XNNZ/ref=sr_1_7?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-7&th=1">NAFYRE N11 PRO GPS Drone</a></h3>
-            <p style="color: white;">Price: $149.99</p>
-          </td>
-          <td style="padding: 20px; border: 1px solid #FFB6C1;">
-            <img src="dronePurchase2.jpg" alt="DJI Mini 4K" width="250" height="200" style="border-radius: 10px;"><br>
-            <h3 style="color: #FFB6C1; text-align: center;"><a href="https://www.amazon.ca/DJI-Stabilization-Transmission-Resistance-Battery/dp/B0CXJDDJ9X/ref=sr_1_9?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-9&ufe=app_do%3Aamzn1.fos.a9cfdadb-853e-427d-a2b7-ed306eff4f60&th=1">DJI Mini 4K</a></h3>
-            <p style="color: white;">Price: $389.00</p>
-          </td>
-          <td style="padding: 20px; border: 1px solid #FFB6C1;">
-            <img src="dronePurchase3.jpg" alt="Potensic ATOM 3-Axis Gimbal 4K GPS Drone" width="250" height="200" style="border-radius: 10px;"><br>
-            <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/Potensic-Transmission-QuickShots-Lightweight-Beginners/dp/B0CF8NXJ57/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24%3Aamzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2KHIB2Z0D9UTI&cv_ct_cx=photography%2Bdrone&keywords=photography%2Bdrone&pd_rd_i=B0CF8NXJ57&pd_rd_r=156b16ed-5183-4734-bb2a-22c27ec36859&pd_rd_w=Lj4Pa&pd_rd_wg=i8V0s&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=THXF605M777463BJW71V&qid=1740090806&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=photography%2Bdron%2Caps%2C102&sr=1-4-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1">Potensic ATOM 3-Axis Gimbal 4K GPS Drone</a></h3>
-            <p style="color: white;">Price: $539.99</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 20px; border: 1px solid #FFB6C1;">
-            <img src="dronePurchase4.jpg" alt="DJI Avata Explorer Combo - First-Person View Drone" width="250" height="200" style="border-radius: 10px;"><br>
-            <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/DJI-Avata-Explorer-Combo-First-Person/dp/B0BQYSBGS4/ref=sr_1_31?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-31&th=1">DJI Avata Explorer Combo - First-Person View Drone</a></h3>
-            <p style="color: white;">Price: $833.20</p>
-          </td>
-          <td style="padding: 20px; border: 1px solid #FFB6C1;">
-            <img src="dronePurchase5.jpg" alt="DJI Mini 4 Pro Fly More Combo with DJI RC 2 (Screen Remote Controller)" width="250" height="200" style="border-radius: 10px;"><br>
-            <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/DJI-controller-Folding-Mini-Drone-Batteries/dp/B0CFF4RYDM/ref=sr_1_44?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-44&th=1">DJI Mini 4 Pro Fly More Combo with DJI RC 2 (Screen Remote Controller)</a></h3>
-            <p style="color: white;">Price: $1429.99</p>
-          </td>
-          <td style="padding: 20px; border: 1px solid #FFB6C1;">
-            <img src="dronePurchase6.jpg" alt="DJI Air 3S Fly More Combo (RC 2 Screen Remote Controller)" width="250" height="200" style="border-radius: 10px;"><br>
-            <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/DJI-Controller-Wide-Angle-Omnidirectional-Batteries/dp/B07FVZFFXD/ref=sr_1_23_sspa?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGFiMAZIoEZAYKclD7XaDkCc.bQOXQPk4A_Q-EmrF0XEht2hyZ-upPdR1mATacxktS9E&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-23-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">DJI Air 3S Fly More Combo (RC 2 Screen Remote Controller)</a></h3>
-            <p style="color: white;">Price: $2059.00</p>
-          </td>
-        </tr>
-      </table>
-  </div>
-
-  <!-- <h2 id="articles">Articles (tips)</h2> -->
-  <h2>Articles</h2> 
-
-  <h3 style = "margin-left: 20px; color: #FFB6C1"> Article #1</h3>
-  <article style = "margin-left: 20px"><h4>The History of Aerial Photography. Cite: <a href = "https://papa.clubexpress.com/content.aspx?page_id=22&club_id=808138&module_id=158950">here</a></h4>
-
-    <h4>The first known aerial photograph was taken in 1858 by French photographer and balloonist, Gaspar Felix Tournachon. In 1885, he captured the first known aerial image from a hot-air balloon. His early photographs no longer exist, but the oldest surviving aerial image is James Wallace Black’s 1860 photograph of Boston.</h4>
-    
-    <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
-      <img src="article1a.jpg" alt="photo of aerial photographing kite" width="800" height="300">
-      <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-        (left) Nadar "elevating photography to the condition of art", caricature by Honoré Daunier. Published in Le Boulevard 25th May, 1862.
-        (center) Nadar's earliest surviving aerial image, taken above Paris in 1866.
-        (right) Boston from a tethered balloon, 13th October, 1860, by James Wallace Black.
-      </figcaption>
-    </figure>  
-
-    <h4>Beyond balloons, pioneers experimented with kites, pigeons, and rockets for aerial photography. In 1906, George R. Lawrence used large-format panoramic cameras lifted by kites to document San Francisco after the earthquake and fire, achieving some of the largest aerial exposures ever taken.</h4>
-      
-    <h4>Pigeons were also used for aerial photography, particularly by the Bavarian Pigeon Corps for military reconnaissance. In 1903, Julius Neubranner developed a small, breast-mounted camera for carrier pigeons, capturing images at 30-second intervals. However, flight paths were unreliable.</h4>
-      
-    <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
-      <img src="article1b.jpg" alt="Photo of rocket powered camera" width="800" height="300">
-      <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-        (left) Aerial photograph of the Swedish countryside, taken by Alfred Nobel from a rocket powered camera
-        (right) Albert Maul's rocket, and (center) one of Maul's aerial photographs of the German countryside.
-      </figcaption>
-    </figure> 
-
-    <h4>Rocket-mounted cameras also emerged, with Swedish inventor Alfred Nobel taking the first successful aerial photo from a rocket in 1897. By 1906, Albert Maul improved the technique using compressed-air rockets with gyroscopically stabilized cameras.</h4> 
-
-    <h4>The first aerial photograph from an airplane was taken in 1909 when Wilbur Wright flew over Italy. During World War I, aerial photography replaced traditional battlefield sketches, with specialized aerial cameras producing high-quality reconnaissance images. This became the industry standard for the next 50 years.</h4>
-      
-    <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
-      <img src="article1c.jpg" alt="photos taken by aerial drone" width="800" height="300">
-      <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-        (left) Fairchild's camera became the standard for aerial photography
-        (center) Lower Manhattan Island, constructed from 100 aerial photographs taken by Fairchild Aerial Camera Corporation at an altitude of 10,000 feet on August 4, 1921
-        (right) Ocean City, New Jersey, part of an aerial survey of the New Jersey coast in 1920, believed to be by the Fairchild Aerial Camera Company.
-      </figcaption>
-    </figure> 
-
-    <h4>Today, aerial photography relies on digital cameras and gyro-stabilization for superior image quality. It serves commercial, industrial, agricultural, governmental, and private clients, with high-resolution images delivered almost instantly. Unlike traditional aircraft-based aerial photography, drones can fly at lower altitudes, navigate tight spaces, and operate autonomously through GPS programming. They are widely used in industries such as real estate, construction, agriculture, filmmaking, and environmental monitoring.</h4>
-  
-  </article>
-
-  <h3 style = "margin-left: 20px; color: #FFB6C1;
-   "> Article #2</h3>
-  <article style = "margin-left: 20px"><h4>The Ethics of Drone Photography. Cite: <a href = "https://droneuav.co.uk/the-ethics-of-drone-photography/">here</a></h4>
-
-    <h4>Drone photography has rapidly grown in popularity due to technological advancements, increased accessibility, and the creative opportunities it provides. However, as drones become more prevalent, their use raises significant ethical, legal, and environmental concerns that drone operators must consider.</h4>
-
-    <h4>The Rise of Drone Photography. The evolution of drone technology has revolutionized aerial photography, making it possible for photographers to capture breathtaking landscapes and unique perspectives. The increasing affordability and accessibility of drones have contributed to their widespread adoption, with hobbyists and professionals alike integrating them into their creative work. </h4>
-  
-    <figure style="float: left; text-align: center; margin-right: 200px; margin-left: 200px;">
-      <img src="article2a.jpg" alt="The rise of aerial photography and its applications" width="1100" height="300">
-      <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-        The rise of aerial photography and its applications
-      </figcaption>
-    </figure> 
-
-    <h4>Operating a drone requires careful adherence to local and federal regulations, which vary by jurisdiction. Failure to comply with these laws can result in fines or legal consequences. Drone operators must ensure they have the necessary permits, follow no-fly zone restrictions, and avoid posing safety risks. Additionally, privacy laws play a critical role in drone usage, particularly concerning filming private properties or individuals without consent. Unauthorized image capture can lead to legal disputes, making it essential for drone users to familiarize themselves with the relevant legal framework.</h4>
-  
-    <h4>Ethical concerns surrounding drone photography primarily involve privacy, consent, and the impact on individuals and communities. Capturing images without informed consent, even in public spaces, can raise moral questions. While public areas generally allow for unrestricted photography, drone users should consider the ethical implications of capturing identifiable individuals.</h4>
-    
-    <figure style="float: left; text-align: center; margin-right: 300px; margin-left: 300px;">
-      <img src="article2b.jpg" alt="DJI drone pictured above forest" width="800" height="300">
-      <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-        DJI drone pictured above forest
-      </figcaption>
-    </figure> 
-
-    <h4>Navigating the ethical, legal, and environmental landscape of drone photography requires careful consideration. By staying informed about regulations, respecting privacy, and minimizing environmental impact, drone operators can balance creativity with responsibility. Ethical drone usage enhances the field while fostering trust among the public, ensuring that aerial photography remains both innovative and respectful of all stakeholders.</h4>
-    
-    <figure style="float: left; text-align: center; margin-right: 300px; margin-left: 300px;">
-      <img src="article2c.jpg" alt="Drone representing a privacy violation" width="900" height="300">
-      <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
-        Drone representing a privacy violation
-      </figcaption>
-    </figure> 
-
-  </body>
-</html>
+   
+   <ul>
+     <h4 style="margin-left: 20px;"><li>Personal Project</li>
+     <li>Real Estate</li>
+     <li>Film Making</li>
+     <li>Agriculture</li>
+     <li>Surveying</li></h4>
+   </ul>
+   <h4><p style="margin-left: 20px;">Feel free to have a read on the basics of drone photography <a href="https://www.techtarget.com/iotagenda/definition/drone-photography">here</a>.</p></h4>
+   <p><h3 style="margin-left: 20px;">Now, use the navigation bar at the top of this screen (or simply scroll) to have a look at other parts of the website!</h3></p>
+ 
+   <!-- <h2 id="info">Info</h2> -->
+   <h2>Info</h2> 
+ 
+   <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
+     <img src="droneTypes.jpeg" alt="Photo of different drones types" width="650" height="500">
+     <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+       DJI Avata 2 Photography Drone
+     </figcaption>
+   </figure>  
+ 
+   <h3 style="margin-left: 20px; margin-right: 200px">When purchasing a drone, there are many things you must keep in mind:</h3>
+ 
+   <ol>
+     <li style = "margin-right: 130px;"><strong>Weight & Size</strong> - Drones range from compact sub-250g models, like the DJI Mini series all the way to professional rigs exceeding 2kg.</li>
+     <li style = "margin-right: 130px;"><strong>Flight Range</strong> - Consumer drones typically have a range of 5-15 km, depending on signal strength.</li>
+     <li style = "margin-right: 130px;"><strong>Camera Quality</strong> - Entry-level drones have 12MP cameras with 1080p video, while high-end models offer 20MP+ sensors.</li>
+     <li style = "margin-right: 130px;"><strong>Build Quality & Durability</strong> - Premium drones feature high-quality materials like carbon fiber and reinforced plastics for enhanced durability and impact resistance.</li>
+     <li style = "margin-right: 130px;"><strong>Battery Life</strong> - Most drones fly for 20-40 minutes per charge. Weather conditions, payload, and flying style affect battery performance.</li>
+     <li style = "margin-right: 130px;"><strong>Flight Rules & Regulations</strong> - Many countries require registration for drones over 250g. No-fly zones exist near airports and restricted areas, with altitude limits typically set at 120m (400ft).</li>
+     <li style = "margin-right: 130px;"><strong>Cost</strong> Prices vary widely:
+       <ul>
+           <li><strong>Entry-level ($300-$700):</strong> Basic camera, limited range, and no obstacle avoidance.</li>
+           <li><strong>Mid-range ($700-$12525,500):</strong> Better cameras (4K, larger sensors), longer range, and smart flight modes.</li>
+           <li><strong>Professional ($1,500-$5,000+):</strong> High-end cameras (5.1K, 1-inch+ sensors), superior flight range, obstacle avoidance, and advanced filming features.</li>
+       </ul>
+     </li>  
+   </ol>
+ 
+   <!-- <h2 id="gallery">Gallery</h2> -->
+   <h2>Gallery</h2>
+ 
+   <div class="gallery">
+     <img src="1.jpg" alt="Drone Image 1">
+     <img src="2.jpg" alt="Drone Image 2">
+     <img src="3.jpg" alt="Drone Image 3">
+     <img src="4.jpg" alt="Drone Image 4">
+     <img src="5.jpg" alt="Drone Image 5">
+     <img src="6.jpg" alt="Drone Image 6">
+     <img src="7.jpg" alt="Drone Image 7">
+     <img src="8.jpg" alt="Drone Image 8">
+     <img src="9.jpg" alt="Drone Image 9">
+     <img src="10.jpg" alt="Drone Image 10">
+     <img src="11.jpg" alt="Drone Image 11">
+     <img src="12.jpg" alt="Drone Image 12">
+     <img src="13.jpg" alt="Drone Image 13">
+     <img src="14.jpg" alt="Drone Image 14">
+     <img src="15.jpg" alt="Drone Image 15">
+     <img src="16.jpg" alt="Drone Image 16">
+   </div>  
+ 
+   <!-- <h2 id="shop">Shop</h2> -->
+   <h2>Shop</h2> 
+ 
+   <!-- Did my own research to figure out how to make a table -->
+ 
+   <div style="display: flex; justify-content: center; align-items: center;">
+       <table style="width: 80%; text-align: center; background-color: #1f1f1f; border-radius: 10px; padding: 20px;">
+         <tr>
+           <td style="padding: 20px; border: 1px solid #FFB6C1;">
+             <img src="dronePurchase1.jpg" alt="NAFYRE N11 PRO GPS Drone" width="250" height="200" style="border-radius: 10px;"><br>
+             <h3 style="color: #FFB6C1; text-align: center;"><a href="https://www.amazon.ca/NAFYRE-Control-Brushless-Quadcopter-Beginners/dp/B0DPX7XNNZ/ref=sr_1_7?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-7&th=1">NAFYRE N11 PRO GPS Drone</a></h3>
+             <p style="color: white;">Price: $149.99</p>
+           </td>
+           <td style="padding: 20px; border: 1px solid #FFB6C1;">
+             <img src="dronePurchase2.jpg" alt="DJI Mini 4K" width="250" height="200" style="border-radius: 10px;"><br>
+             <h3 style="color: #FFB6C1; text-align: center;"><a href="https://www.amazon.ca/DJI-Stabilization-Transmission-Resistance-Battery/dp/B0CXJDDJ9X/ref=sr_1_9?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-9&ufe=app_do%3Aamzn1.fos.a9cfdadb-853e-427d-a2b7-ed306eff4f60&th=1">DJI Mini 4K</a></h3>
+             <p style="color: white;">Price: $389.00</p>
+           </td>
+           <td style="padding: 20px; border: 1px solid #FFB6C1;">
+             <img src="dronePurchase3.jpg" alt="Potensic ATOM 3-Axis Gimbal 4K GPS Drone" width="250" height="200" style="border-radius: 10px;"><br>
+             <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/Potensic-Transmission-QuickShots-Lightweight-Beginners/dp/B0CF8NXJ57/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24%3Aamzn1.sym.46621be6-fabe-4126-8501-d32c96c42a24&crid=2KHIB2Z0D9UTI&cv_ct_cx=photography%2Bdrone&keywords=photography%2Bdrone&pd_rd_i=B0CF8NXJ57&pd_rd_r=156b16ed-5183-4734-bb2a-22c27ec36859&pd_rd_w=Lj4Pa&pd_rd_wg=i8V0s&pf_rd_p=46621be6-fabe-4126-8501-d32c96c42a24&pf_rd_r=THXF605M777463BJW71V&qid=1740090806&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=photography%2Bdron%2Caps%2C102&sr=1-4-acb80629-ce74-4cc5-9423-11e8801573fb-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1">Potensic ATOM 3-Axis Gimbal 4K GPS Drone</a></h3>
+             <p style="color: white;">Price: $539.99</p>
+           </td>
+         </tr>
+         <tr>
+           <td style="padding: 20px; border: 1px solid #FFB6C1;">
+             <img src="dronePurchase4.jpg" alt="DJI Avata Explorer Combo - First-Person View Drone" width="250" height="200" style="border-radius: 10px;"><br>
+             <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/DJI-Avata-Explorer-Combo-First-Person/dp/B0BQYSBGS4/ref=sr_1_31?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-31&th=1">DJI Avata Explorer Combo - First-Person View Drone</a></h3>
+             <p style="color: white;">Price: $833.20</p>
+           </td>
+           <td style="padding: 20px; border: 1px solid #FFB6C1;">
+             <img src="dronePurchase5.jpg" alt="DJI Mini 4 Pro Fly More Combo with DJI RC 2 (Screen Remote Controller)" width="250" height="200" style="border-radius: 10px;"><br>
+             <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/DJI-controller-Folding-Mini-Drone-Batteries/dp/B0CFF4RYDM/ref=sr_1_44?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGBMeaSI3coXxpIBSA_Dh_kNv5Wb9J8BqFTbpsUxRSIoLQbLyVzI5IRDHn_BFgRvJ9XJLa0C-2D61uVrdmHANNv_B92ZEmR_oyiIloRuQCzFifzn_rgozd0CN-j5dK-Hr6gXi3QFPcYpT3d_XfCEGHwiA47DxMxVQAAAWV10Dz5E3.Ag4L4giQZQb1uBOjR0cOn2wHsJPx6N2MPPdWKkjfyV4&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-44&th=1">DJI Mini 4 Pro Fly More Combo with DJI RC 2 (Screen Remote Controller)</a></h3>
+             <p style="color: white;">Price: $1429.99</p>
+           </td>
+           <td style="padding: 20px; border: 1px solid #FFB6C1;">
+             <img src="dronePurchase6.jpg" alt="DJI Air 3S Fly More Combo (RC 2 Screen Remote Controller)" width="250" height="200" style="border-radius: 10px;"><br>
+             <h3 style="color: #FFB6C1; text-align: center;"><a href = "https://www.amazon.ca/DJI-Controller-Wide-Angle-Omnidirectional-Batteries/dp/B07FVZFFXD/ref=sr_1_23_sspa?crid=2KHIB2Z0D9UTI&dib=eyJ2IjoiMSJ9.PoEHRNrJlAKik9LkIvl2noaYgvcDovIy4inu4Ln8U7ioHa8ME-Ra5tt5dCGt5zHyplkSoJBI9Rvz7C5Qo4ph8gDgj_5tnt7vVCnc9TVtroc1k18oZQ9-ssxujuTNRwhXbhNGAmP3H-ztLbN14TmdD8CQIcayDosoYFNNOHArmtqx8IsUCRogD8xswRjqNm-trPQXya6sVPD-fBvT422EabPLGrlaFBSyVGrNUrdZaNqJR1Hf6uN8mO2EhulKtgKzoOZo7uM28nYkE9Uls-tEGFiMAZIoEZAYKclD7XaDkCc.bQOXQPk4A_Q-EmrF0XEht2hyZ-upPdR1mATacxktS9E&dib_tag=se&keywords=photography%2Bdrone&qid=1740090806&sprefix=photography%2Bdron%2Caps%2C102&sr=8-23-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">DJI Air 3S Fly More Combo (RC 2 Screen Remote Controller)</a></h3>
+             <p style="color: white;">Price: $2059.00</p>
+           </td>
+         </tr>
+       </table>
+   </div>
+ 
+   <!-- <h2 id="articles">Articles (tips)</h2> -->
+   <h2>Articles</h2> 
+ 
+   <h3 style = "margin-left: 20px; color: #FFB6C1"> Article #1</h3>
+   <article style = "margin-left: 20px"><h4>The History of Aerial Photography. Cite: <a href = "https://papa.clubexpress.com/content.aspx?page_id=22&club_id=808138&module_id=158950">here</a></h4>
+ 
+     <h4>The first known aerial photograph was taken in 1858 by French photographer and balloonist, Gaspar Felix Tournachon. In 1885, he captured the first known aerial image from a hot-air balloon. His early photographs no longer exist, but the oldest surviving aerial image is James Wallace Black’s 1860 photograph of Boston.</h4>
+ 
+     <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
+       <img src="article1a.jpg" alt="photo of aerial photographing kite" width="800" height="300">
+       <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+         (left) Nadar "elevating photography to the condition of art", caricature by Honoré Daunier. Published in Le Boulevard 25th May, 1862.
+         (center) Nadar's earliest surviving aerial image, taken above Paris in 1866.
+         (right) Boston from a tethered balloon, 13th October, 1860, by James Wallace Black.
+       </figcaption>
+     </figure>  
+ 
+     <h4>Beyond balloons, pioneers experimented with kites, pigeons, and rockets for aerial photography. In 1906, George R. Lawrence used large-format panoramic cameras lifted by kites to document San Francisco after the earthquake and fire, achieving some of the largest aerial exposures ever taken.</h4>
+ 
+     <h4>Pigeons were also used for aerial photography, particularly by the Bavarian Pigeon Corps for military reconnaissance. In 1903, Julius Neubranner developed a small, breast-mounted camera for carrier pigeons, capturing images at 30-second intervals. However, flight paths were unreliable.</h4>
+ 
+     <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
+       <img src="article1b.jpg" alt="Photo of rocket powered camera" width="800" height="300">
+       <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+         (left) Aerial photograph of the Swedish countryside, taken by Alfred Nobel from a rocket powered camera
+         (right) Albert Maul's rocket, and (center) one of Maul's aerial photographs of the German countryside.
+       </figcaption>
+     </figure> 
+ 
+     <h4>Rocket-mounted cameras also emerged, with Swedish inventor Alfred Nobel taking the first successful aerial photo from a rocket in 1897. By 1906, Albert Maul improved the technique using compressed-air rockets with gyroscopically stabilized cameras.</h4> 
+ 
+     <h4>The first aerial photograph from an airplane was taken in 1909 when Wilbur Wright flew over Italy. During World War I, aerial photography replaced traditional battlefield sketches, with specialized aerial cameras producing high-quality reconnaissance images. This became the industry standard for the next 50 years.</h4>
+ 
+     <figure style="float: left; text-align: center; margin-right: 100px; margin-left: 50px;">
+       <img src="article1c.jpg" alt="photos taken by aerial drone" width="800" height="300">
+       <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+         (left) Fairchild's camera became the standard for aerial photography
+         (center) Lower Manhattan Island, constructed from 100 aerial photographs taken by Fairchild Aerial Camera Corporation at an altitude of 10,000 feet on August 4, 1921
+         (right) Ocean City, New Jersey, part of an aerial survey of the New Jersey coast in 1920, believed to be by the Fairchild Aerial Camera Company.
+       </figcaption>
+     </figure> 
+ 
+     <h4>Today, aerial photography relies on digital cameras and gyro-stabilization for superior image quality. It serves commercial, industrial, agricultural, governmental, and private clients, with high-resolution images delivered almost instantly. Unlike traditional aircraft-based aerial photography, drones can fly at lower altitudes, navigate tight spaces, and operate autonomously through GPS programming. They are widely used in industries such as real estate, construction, agriculture, filmmaking, and environmental monitoring.</h4>
+ 
+   </article>
+ 
+   <h3 style = "margin-left: 20px; color: #FFB6C1;"> Article #2</h3>
+   <h3 style = "margin-left: 20px; color: #FFB6C1;
+    "> Article #2</h3>
+   <article style = "margin-left: 20px"><h4>The Ethics of Drone Photography. Cite: <a href = "https://droneuav.co.uk/the-ethics-of-drone-photography/">here</a></h4>
+ 
+     <h4>Drone photography has rapidly grown in popularity due to technological advancements, increased accessibility, and the creative opportunities it provides. However, as drones become more prevalent, their use raises significant ethical, legal, and environmental concerns that drone operators must consider.</h4>
+ 
+     <h4>The Rise of Drone Photography. The evolution of drone technology has revolutionized aerial photography, making it possible for photographers to capture breathtaking landscapes and unique perspectives. The increasing affordability and accessibility of drones have contributed to their widespread adoption, with hobbyists and professionals alike integrating them into their creative work. </h4>
+ 
+     <figure style="float: left; text-align: center; margin-right: 200px; margin-left: 200px;">
+       <img src="article2a.jpg" alt="The rise of aerial photography and its applications" width="1100" height="300">
+       <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+         The rise of aerial photography and its applications
+       </figcaption>
+     </figure> 
+ 
+     <h4>Operating a drone requires careful adherence to local and federal regulations, which vary by jurisdiction. Failure to comply with these laws can result in fines or legal consequences. Drone operators must ensure they have the necessary permits, follow no-fly zone restrictions, and avoid posing safety risks. Additionally, privacy laws play a critical role in drone usage, particularly concerning filming private properties or individuals without consent. Unauthorized image capture can lead to legal disputes, making it essential for drone users to familiarize themselves with the relevant legal framework.</h4>
+ 
+     <h4>Ethical concerns surrounding drone photography primarily involve privacy, consent, and the impact on individuals and communities. Capturing images without informed consent, even in public spaces, can raise moral questions. While public areas generally allow for unrestricted photography, drone users should consider the ethical implications of capturing identifiable individuals.</h4>
+ 
+     <figure style="float: left; text-align: center; margin-right: 300px; margin-left: 300px;">
+       <img src="article2b.jpg" alt="DJI drone pictured above forest" width="800" height="300">
+       <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+         DJI drone pictured above forest
+       </figcaption>
+     </figure> 
+ 
+     <h4>Navigating the ethical, legal, and environmental landscape of drone photography requires careful consideration. By staying informed about regulations, respecting privacy, and minimizing environmental impact, drone operators can balance creativity with responsibility. Ethical drone usage enhances the field while fostering trust among the public, ensuring that aerial photography remains both innovative and respectful of all stakeholders.</h4>
+ 
+     <figure style="float: left; text-align: center; margin-right: 300px; margin-left: 300px;">
+       <img src="article2c.jpg" alt="Drone representing a privacy violation" width="900" height="300">
+       <figcaption style="color: #D3D3D3; font-size: 18px; margin-top: 5px;">
+         Drone representing a privacy violation
+       </figcaption>
+     </figure> 
+ 
+   </body>
