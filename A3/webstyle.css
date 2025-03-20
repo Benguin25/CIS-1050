@@ -1,0 +1,12 @@
+figure {
+    float: right;
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin-right: 100px; 
+    margin-left: 50px;
+}
