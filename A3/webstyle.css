@@ -10,3 +10,27 @@ figure {
     margin-right: 100px; 
     margin-left: 50px;
 }
+
+body {
+    background-color: #0F111A;
+    color: white; 
+}  
+
+nav a {
+    color: #FFB6C1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+  }
+
+  nav a:hover {
+    color: #D3D3D3;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+
+ html {
+    scroll-behavior: smooth;
+}
