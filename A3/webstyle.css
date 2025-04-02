@@ -30,8 +30,41 @@ html {
   scroll-behavior: smooth;
 }
 
+customHeader {
+  display: block; /* Ensure it's a block-level element */
+  text-align: center;
+  color: rgb(142, 157, 255);
+  font-size: 48px;
+}
+
+h1 {
+  text-align: left;
+}
+
 h2 {
   color: white;
+}
+
+/*3 column text*/
+.three-column-text {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+/* this code ensures that every div (excepyt the first) moves the text to the next column */
+.three-column-text > div:not(:first-child) {
+  break-before: column;
+}
+
+/*4 column text*/
+.four-column-text {
+  column-count: 4;
+  column-gap: 15px;
+}
+
+/* this code ensures that every div (excepyt the first) moves the text to the next column */
+.four-column-text > div:not(:first-child) {
+  break-before: column;
 }
 
 /* Two-column container */
