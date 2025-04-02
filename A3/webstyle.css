@@ -1,23 +1,35 @@
 body {
-    background-color: #0F111A;
-    color: white; 
-}  
+  padding: 25px; 
+  background-color: #323232;
+  color: rgb(142, 157, 255);
+  /* #E91E63 - save this colour to use as an accent*/
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: right;
+}
 
 nav a {
-    color: #FFB6C1;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 24px;
-  }
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 18px;
+}
 
-  nav a:hover {
-    color: #D3D3D3;
-    background-color: black;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 30px;
-  }
+nav a:hover {
+  text-decoration: underline;
+}
 
- html {
-    scroll-behavior: smooth;
+nav a:last-of-type {
+  margin-right: 25px; /* have a right margin if it the last in the nav bar */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: white;
 }
