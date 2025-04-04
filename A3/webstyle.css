@@ -79,23 +79,34 @@ h2 {
 }
 
 /* Code for image gallery here (on about page) */
-     /* Conudcted my own research to get the code below for the image gallery: */
-     .gallery {
-      text-align: center; /* Centering */
-    }
+.gallery {
+  text-align: center; /* Centering */
+}
 
-    .gallery img {
-      width: 17%;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease-in-out;
-      display: inline-block;
-      margin: 1%;
-      vertical-align: top;
-    }
+.gallery img {
+  width: 17%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+}
 
-    .gallery img:hover {
-      transform: scale(1.25);
-      z-index: 10;
-    }
+.gallery img:hover {
+  transform: scale(1.25);
+  z-index: 10;
+}
+
+a.custom-link {
+  color: #d4d7ff;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a.custom-link:hover {
+  color: #c0c0c0;
+}
