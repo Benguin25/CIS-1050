@@ -110,3 +110,13 @@ a.custom-link {
 a.custom-link:hover {
   color: #c0c0c0;
 }
+
+a.custom-link2 {
+  color: rgb(142,157,255);
+  transition: color 0.3s ease;
+  font-style: italic;
+}
+
+a.custom-link2:hover {
+  color: #c0c0c0;
+}
